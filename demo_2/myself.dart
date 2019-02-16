@@ -27,7 +27,9 @@ class MySelf extends StatelessWidget {
               child: Icon(Icons.chevron_right),
             ),
             contentPadding: const EdgeInsets.all(20.0),
-            onTap: () {}
+            onTap: () {
+              Navigator.pushNamed(context, "/myself_detail");
+            }
           ),
         ),
         Container(

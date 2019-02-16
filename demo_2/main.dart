@@ -4,6 +4,8 @@ import 'package:myapp/find_out.dart';
 import 'package:myapp/person_list.dart';
 import 'package:myapp/myself.dart';
 import 'package:myapp/home.dart';
+import 'package:myapp/myself_detail.dart';
+import 'package:myapp/postion.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,7 +17,10 @@ class MyApp extends StatelessWidget {
       home: HomePage(),
       routes: {
         '/chat': (BuildContext context) => Chat(),
+        '/myself_detail': (BuildContext context) => MySelfDetail(),
+        '/postion': (BuildContext context) => Postion()
       },
+      // initialRoute: '/postion',
     );
   }
 }
@@ -26,7 +31,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 2;
   final _WidgetOption = [Home(), PersonList(), FindOut(), MySelf()];
   final textTitle = [Text("微信", style: TextStyle(
             color: Colors.black
