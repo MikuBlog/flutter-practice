@@ -6,6 +6,8 @@ import 'package:myapp/myself.dart';
 import 'package:myapp/home.dart';
 import 'package:myapp/myself_detail.dart';
 import 'package:myapp/postion.dart';
+import 'package:myapp/setting.dart';
+import 'package:myapp/card.dart';
 
 void main() => runApp(MyApp());
 
@@ -18,9 +20,11 @@ class MyApp extends StatelessWidget {
       routes: {
         '/chat': (BuildContext context) => Chat(),
         '/myself_detail': (BuildContext context) => MySelfDetail(),
-        '/postion': (BuildContext context) => Postion()
+        '/postion': (BuildContext context) => Postion(),
+        '/setting': (BuildContext context) => Setting(),
+        '/card': (BuildContext context) => CardPage()
       },
-      // initialRoute: '/postion',
+      // initialRoute: '/card',
     );
   }
 }

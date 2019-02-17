@@ -66,7 +66,9 @@ class MySelf extends StatelessWidget {
             leading: Icon(Icons.credit_card, color: Colors.yellowAccent,),
             title: Text("卡包"),
             trailing: Icon(Icons.chevron_right),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, "/card");
+            },
           ),
         ),
         Container(
@@ -85,7 +87,9 @@ class MySelf extends StatelessWidget {
             leading: Icon(Icons.settings, color: Colors.lightBlueAccent,),
             title: Text("设置"),
             trailing: Icon(Icons.chevron_right),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, "/setting");
+            },
           ),
         )
       ],
