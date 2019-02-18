@@ -48,7 +48,9 @@ class MySelf extends StatelessWidget {
             leading: Icon(Icons.collections, color: Colors.redAccent,),
             title: Text("收藏"),
             trailing: Icon(Icons.chevron_right),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, "/collection");
+            },
           ),
         ),
         Container(
@@ -77,7 +79,9 @@ class MySelf extends StatelessWidget {
             leading: Icon(Icons.sentiment_satisfied, color: Colors.orangeAccent,),
             title: Text("表情"),
             trailing: Icon(Icons.chevron_right),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, "/expression");
+            },
           ),
         ),
         Container(

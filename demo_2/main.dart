@@ -8,6 +8,8 @@ import 'package:myapp/myself_detail.dart';
 import 'package:myapp/postion.dart';
 import 'package:myapp/setting.dart';
 import 'package:myapp/card.dart';
+import 'package:myapp/collection.dart';
+import 'package:myapp/expression.dart'; 
 
 void main() => runApp(MyApp());
 
@@ -22,9 +24,11 @@ class MyApp extends StatelessWidget {
         '/myself_detail': (BuildContext context) => MySelfDetail(),
         '/postion': (BuildContext context) => Postion(),
         '/setting': (BuildContext context) => Setting(),
-        '/card': (BuildContext context) => CardPage()
+        '/card': (BuildContext context) => CardPage(),
+        '/collection': (BuildContext context) => Collection(),
+        '/expression': (BuildContext context) => Expression()
       },
-      // initialRoute: '/card',
+      initialRoute: '/expression',
     );
   }
 }
@@ -59,7 +63,7 @@ class _HomePageState extends State<HomePage> {
             onPressed: () {},
           ),
           IconButton(
-            icon: Icon(Icons.add_circle_outline, color: Colors.black),
+            icon: Icon(Icons.add, color: Colors.black),
             tooltip: "菜单",
             onPressed: () {},
           )
