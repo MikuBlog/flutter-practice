@@ -5,17 +5,22 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        ListTile(
-          leading: Container(
-            margin: const EdgeInsets.only(left: 5.0),
-            child: Icon(Icons.computer),
-          ),
-          title: Text(
-            "Windows 微信已登录，手机通知已关闭",
-            style: TextStyle(
-              fontSize: 13.0,
-              color: Colors.grey
+        Container(
+          child: ListTile(
+            leading: Container(
+              margin: const EdgeInsets.only(left: 5.0),
+              child: Icon(Icons.computer),
             ),
+            title: Text(
+              "Windows 微信已登录，手机通知已关闭",
+              style: TextStyle(
+                fontSize: 13.0,
+                color: Colors.grey
+              ),
+            ),
+          ),
+          decoration: BoxDecoration(
+            border: BorderDirectional(bottom: BorderSide(width: .5, color: Colors.grey[200]))
           ),
         ),
         Expanded(

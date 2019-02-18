@@ -9,7 +9,8 @@ import 'package:myapp/postion.dart';
 import 'package:myapp/setting.dart';
 import 'package:myapp/card.dart';
 import 'package:myapp/collection.dart';
-import 'package:myapp/expression.dart'; 
+import 'package:myapp/expression.dart';
+import 'package:myapp/friend.dart';  
 
 void main() => runApp(MyApp());
 
@@ -26,9 +27,9 @@ class MyApp extends StatelessWidget {
         '/setting': (BuildContext context) => Setting(),
         '/card': (BuildContext context) => CardPage(),
         '/collection': (BuildContext context) => Collection(),
-        '/expression': (BuildContext context) => Expression()
-      },
-      initialRoute: '/expression',
+        '/expression': (BuildContext context) => Expression(),
+        '/friend': (BuildContext context) => Friend()
+      }
     );
   }
 }
@@ -39,7 +40,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _selectedIndex = 2;
+  int _selectedIndex = 0;
   final _WidgetOption = [Home(), PersonList(), FindOut(), MySelf()];
   final textTitle = [Text("微信", style: TextStyle(
             color: Colors.black

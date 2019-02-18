@@ -27,7 +27,9 @@ class FindOut extends StatelessWidget {
                 ],
               )
             ),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, "/friend");
+            },
           ),
         ),
         Container(
