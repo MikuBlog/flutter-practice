@@ -10,7 +10,8 @@ import 'package:myapp/setting.dart';
 import 'package:myapp/card.dart';
 import 'package:myapp/collection.dart';
 import 'package:myapp/expression.dart';
-import 'package:myapp/friend.dart';  
+import 'package:myapp/friend.dart'; 
+import 'package:myapp/small_program.dart'; 
 
 void main() => runApp(MyApp());
 
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
         '/card': (BuildContext context) => CardPage(),
         '/collection': (BuildContext context) => Collection(),
         '/expression': (BuildContext context) => Expression(),
-        '/friend': (BuildContext context) => Friend()
+        '/friend': (BuildContext context) => Friend(),
+        '/small_program': (BuildContext context) => SmallProgram()
       }
     );
   }
