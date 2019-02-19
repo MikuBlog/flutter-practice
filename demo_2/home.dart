@@ -9,7 +9,7 @@ class Home extends StatelessWidget {
           child: ListTile(
             leading: Container(
               margin: const EdgeInsets.only(left: 5.0),
-              child: Icon(Icons.computer),
+              child: Icon(IconData(0xe609, fontFamily: 'iconfont')),
             ),
             title: Text(
               "Windows 微信已登录，手机通知已关闭",

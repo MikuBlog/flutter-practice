@@ -8,7 +8,7 @@ class FindOut extends StatelessWidget {
           color: Colors.white,
           margin: const EdgeInsets.only(bottom: 10.0),
           child: ListTile(
-            leading: Icon(Icons.streetview, color: Colors.redAccent,),
+            leading: Icon(IconData(0xe605, fontFamily: 'iconfont'), color: Colors.redAccent),
             title: Text("朋友圈"),
             trailing: Container(
               width: 100.0,
@@ -35,7 +35,7 @@ class FindOut extends StatelessWidget {
         Container(
           color: Colors.white,
           child: ListTile(
-            leading: Icon(Icons.phone_android, color: Colors.blueAccent,),
+            leading: Icon(IconData(0xe607, fontFamily: 'iconfont'), color: Colors.blueAccent),
             title: Text("扫一扫"),
             trailing: Icon(Icons.chevron_right),
             onTap: () {},
@@ -45,7 +45,7 @@ class FindOut extends StatelessWidget {
           color: Colors.white,
           margin: const EdgeInsets.only(bottom: 10.0),
           child: ListTile(
-            leading: Icon(Icons.phonelink_ring, color: Colors.blueAccent,),
+            leading: Icon(IconData(0xe618, fontFamily: 'iconfont'), color: Colors.blueAccent),
             title: Text("摇一摇"),
             trailing: Icon(Icons.chevron_right),
             onTap: () {},
@@ -54,7 +54,7 @@ class FindOut extends StatelessWidget {
         Container(
           color: Colors.white,
           child: ListTile(
-            leading: Icon(Icons.pages, color: Colors.orangeAccent,),
+            leading: Icon(IconData(0xe604, fontFamily: 'iconfont'), color: Colors.orangeAccent),
             title: Text("看一看"),
             trailing: Icon(Icons.chevron_right),
             onTap: () {},
@@ -64,7 +64,7 @@ class FindOut extends StatelessWidget {
           color: Colors.white,
           margin: const EdgeInsets.only(bottom: 10.0),
           child: ListTile(
-            leading: Icon(Icons.search, color: Colors.redAccent,),
+            leading: Icon(IconData(0xe610, fontFamily: 'iconfont'), color: Colors.redAccent),
             title: Text("搜一搜"),
             trailing: Icon(Icons.chevron_right),
             onTap: () {},
@@ -73,7 +73,7 @@ class FindOut extends StatelessWidget {
         Container(
           color: Colors.white,
           child: ListTile(
-            leading: Icon(Icons.shopping_cart, color: Colors.orangeAccent,),
+            leading: Icon(IconData(0xe601, fontFamily: 'iconfont'), color: Colors.orangeAccent),
             title: Text("购物"),
             trailing: Icon(Icons.chevron_right),
             onTap: () {},
@@ -83,7 +83,7 @@ class FindOut extends StatelessWidget {
           color: Colors.white,
           margin: const EdgeInsets.only(bottom: 10.0),
           child: ListTile(
-            leading: Icon(Icons.games, color: Colors.purpleAccent,),
+            leading: Icon(IconData(0xe614, fontFamily: 'iconfont'), color: Colors.purpleAccent),
             title: Text("游戏"),
             trailing: Icon(Icons.chevron_right),
             onTap: () {},
@@ -92,7 +92,7 @@ class FindOut extends StatelessWidget {
         Container(
           color: Colors.white,
           child: ListTile(
-            leading: Icon(Icons.computer, color: Colors.pinkAccent,),
+            leading: Icon(IconData(0xe60d, fontFamily: 'iconfont'), color: Colors.pinkAccent),
             title: Text("小程序"),
             trailing: Icon(Icons.chevron_right),
             onTap: () {},

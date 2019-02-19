@@ -49,9 +49,9 @@ flutter:
   assets:
     - images/头像.jpg
   fonts:
-    - family: FZSTK
+    - family: iconfont
       fonts:
-        - asset: fonts/FZSTK.TTF 
+        - asset: fonts/iconfont.ttf
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

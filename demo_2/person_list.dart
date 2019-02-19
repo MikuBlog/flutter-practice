@@ -35,7 +35,7 @@ class PersonList extends StatelessWidget {
                 color: Colors.greenAccent
               ),
             ),
-            title: Text("小程序"),
+            title: Text("群聊"),
             trailing: Icon(Icons.chevron_right),
             onTap: () {},
           ),
@@ -53,7 +53,7 @@ class PersonList extends StatelessWidget {
                 color: Colors.blueAccent
               ),
             ),
-            title: Text("小程序"),
+            title: Text("标签"),
             trailing: Icon(Icons.chevron_right),
             onTap: () {},
           ),
@@ -71,7 +71,7 @@ class PersonList extends StatelessWidget {
                 color: Colors.blueAccent
               ),
             ),
-            title: Text("小程序"),
+            title: Text("公众号"),
             trailing: Icon(Icons.chevron_right),
             onTap: () {},
           ),

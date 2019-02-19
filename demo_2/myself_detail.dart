@@ -84,7 +84,7 @@ class MySelfDetail extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
-                    Icon(Icons.grain),
+                    Icon(IconData(0xe602, fontFamily: 'iconfont')),
                     Icon(Icons.chevron_right)
                   ],
                 ),

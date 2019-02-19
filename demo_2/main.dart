@@ -11,7 +11,8 @@ import 'package:myapp/card.dart';
 import 'package:myapp/collection.dart';
 import 'package:myapp/expression.dart';
 import 'package:myapp/friend.dart'; 
-import 'package:myapp/small_program.dart'; 
+import 'package:myapp/small_program.dart';
+import 'package:myapp/test.dart';
 
 void main() => runApp(MyApp());
 
@@ -30,8 +31,10 @@ class MyApp extends StatelessWidget {
         '/collection': (BuildContext context) => Collection(),
         '/expression': (BuildContext context) => Expression(),
         '/friend': (BuildContext context) => Friend(),
-        '/small_program': (BuildContext context) => SmallProgram()
-      }
+        '/small_program': (BuildContext context) => SmallProgram(),
+        '/test': (BuildContext context) => Test()
+      },
+//      initialRoute: '/test',
     );
   }
 }
@@ -76,11 +79,29 @@ class _HomePageState extends State<HomePage> {
       ),
       body: _WidgetOption.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
+        fixedColor: Colors.lightGreen,
         items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.chat, color: Colors.black38,), title: Text("微信", style: TextStyle(color: Colors.black38),)),
-          BottomNavigationBarItem(icon: Icon(Icons.mail, color: Colors.black38,), title: Text("通讯录", style: TextStyle(color: Colors.black38),)),
-          BottomNavigationBarItem(icon: Icon(Icons.find_in_page, color: Colors.black38,), title: Text("发现", style: TextStyle(color: Colors.black38),)),
-          BottomNavigationBarItem(icon: Icon(Icons.people, color: Colors.black38,), title: Text("我", style: TextStyle(color: Colors.black38),))
+          // ignore: argument_type_not_assignable
+          BottomNavigationBarItem(
+              icon: Icon(IconData(0xe611, fontFamily: 'iconfont'), color: Colors.black38),
+              title: _selectedIndex!=0?Text("微信", style: TextStyle(color: Colors.black38),) : Text("微信", style: TextStyle(color: Colors.lightGreen),),
+              activeIcon: Icon(IconData(0xe611, fontFamily: 'iconfont'), color: Colors.lightGreen),
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(IconData(0xe617, fontFamily: 'iconfont'), color: Colors.black38),
+              title: _selectedIndex!=1?Text("通讯录", style: TextStyle(color: Colors.black38),) : Text("通讯录", style: TextStyle(color: Colors.lightGreen),),
+              activeIcon: Icon(IconData(0xe617, fontFamily: 'iconfont'), color: Colors.lightGreen),
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(IconData(0xe60a, fontFamily: 'iconfont'), color: Colors.black38),
+              title: _selectedIndex!=2?Text("发现", style: TextStyle(color: Colors.black38),) : Text("发现", style: TextStyle(color: Colors.lightGreen),),
+              activeIcon: Icon(IconData(0xe60a, fontFamily: 'iconfont'), color: Colors.lightGreen),
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(IconData(0xe612, fontFamily: 'iconfont'), color: Colors.black38),
+              title: _selectedIndex!=3?Text("我", style: TextStyle(color: Colors.black38),) : Text("我", style: TextStyle(color: Colors.lightGreen),),
+              activeIcon: Icon(IconData(0xe612, fontFamily: 'iconfont'), color: Colors.lightGreen),
+          )
         ],
         currentIndex: _selectedIndex,
         onTap: (index) {
