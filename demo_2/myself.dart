@@ -65,7 +65,9 @@ class MySelf extends StatelessWidget {
             leading: Icon(IconData(0xe60c, fontFamily: 'iconfont'), color: Colors.lightBlue),
             title: Text("相册"),
             trailing: Icon(Icons.chevron_right),
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, "/album");
+            },
           ),
         ),
         Container(

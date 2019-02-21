@@ -8,7 +8,8 @@ class Chat extends StatelessWidget {
         title: Text(
           "【网维】17小家庭(8)",
           style: TextStyle(
-            color: Colors.black
+            color: Colors.black,
+              fontSize: 14.0
           ),
         ),
         actions: <Widget>[
@@ -19,8 +20,9 @@ class Chat extends StatelessWidget {
         ],
         backgroundColor: Colors.white,
         brightness: Brightness.dark,
+        elevation: 0.0,
         leading: GestureDetector(
-          child: Icon(Icons.arrow_back, color: Colors.black),
+          child: Icon(Icons.chevron_left, color: Colors.black),
           onTap: () {
             Navigator.pop(context);
           },

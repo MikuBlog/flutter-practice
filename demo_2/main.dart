@@ -13,6 +13,7 @@ import 'package:myapp/expression.dart';
 import 'package:myapp/friend.dart'; 
 import 'package:myapp/small_program.dart';
 import 'package:myapp/test.dart';
+import 'package:myapp/album.dart';
 
 void main() => runApp(MyApp());
 
@@ -32,9 +33,10 @@ class MyApp extends StatelessWidget {
         '/expression': (BuildContext context) => Expression(),
         '/friend': (BuildContext context) => Friend(),
         '/small_program': (BuildContext context) => SmallProgram(),
-        '/test': (BuildContext context) => Test()
+        '/test': (BuildContext context) => Test(),
+        '/album': (BuildContext context) => Album()
       },
-//      initialRoute: '/test',
+//      initialRoute: '/album',
     );
   }
 }
@@ -47,14 +49,18 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
   final _WidgetOption = [Home(), PersonList(), FindOut(), MySelf()];
-  final textTitle = [Text("微信", style: TextStyle(
-            color: Colors.black
+  final textTitle = [Text("微信(103)", style: TextStyle(
+            color: Colors.black,
+            fontSize: 14.0
           ),), Text("通讯录", style: TextStyle(
-            color: Colors.black
+            color: Colors.black,
+            fontSize: 14.0
           ),), Text("发现", style: TextStyle(
-            color: Colors.black
+            color: Colors.black,
+            fontSize: 14.0
           ),), Text("我", style: TextStyle(
-            color: Colors.black
+            color: Colors.black,
+            fontSize: 14.0
           ),)];
   
   @override
@@ -76,6 +82,7 @@ class _HomePageState extends State<HomePage> {
         ],
         backgroundColor: Colors.white,
         brightness: Brightness.dark,
+        elevation: 0.0,
       ),
       body: _WidgetOption.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(

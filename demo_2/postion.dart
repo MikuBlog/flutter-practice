@@ -12,10 +12,12 @@ class Postion extends StatelessWidget {
           },
         ),
         title:  Text("我的地址", style: TextStyle(
-          color: Colors.black
+          color: Colors.black,
+            fontSize: 14.0
         ),),
         backgroundColor: Colors.white,
         brightness: Brightness.dark,
+          elevation: 0.0,
         actions: <Widget>[
           Container(
             margin: const EdgeInsets.only(right: 10.0),

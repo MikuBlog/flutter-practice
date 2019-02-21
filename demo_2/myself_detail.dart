@@ -12,10 +12,12 @@ class MySelfDetail extends StatelessWidget {
           },
         ),
         title: Text("个人信息", style: TextStyle(
-          color: Colors.black
+          color: Colors.black,
+            fontSize: 14.0
         ),),
         backgroundColor: Colors.white,
         brightness: Brightness.dark,
+        elevation: 0.0,
       ),
       body: ListView(
         children: <Widget>[

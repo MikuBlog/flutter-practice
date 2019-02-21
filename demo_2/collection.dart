@@ -12,7 +12,8 @@ class Collection extends StatelessWidget {
           },
         ),
         title: Text("我的收藏", style: TextStyle(
-          color: Colors.black
+          color: Colors.black,
+            fontSize: 14.0
         ),),
         actions: <Widget>[
           IconButton(
@@ -28,6 +29,7 @@ class Collection extends StatelessWidget {
         ],
         backgroundColor: Colors.white,
         brightness: Brightness.dark,
+        elevation: 0.0,
       ),
       body: ListView(
         children: <Widget>[

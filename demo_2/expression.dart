@@ -36,13 +36,13 @@ class _ExpressionState extends State<Expression> {
           ),
           bottom: TabBar(
             tabs: myTabs,
-            isScrollable: true,
             labelColor: Colors.lightGreen,
             unselectedLabelColor: Colors.grey,
             indicatorColor: Colors.lightGreen,
           ),
           title: Text("表情商店", style: TextStyle(
-            color: Colors.black
+            color: Colors.black,
+              fontSize: 14.0
           ),),
           actions: <Widget>[
             IconButton(
@@ -58,6 +58,7 @@ class _ExpressionState extends State<Expression> {
           ],
           backgroundColor: Colors.white,
           brightness: Brightness.dark,
+          elevation: 0.0,
         ),
         body: TabBarView(
           children: widgetLists,
