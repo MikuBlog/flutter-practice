@@ -10,7 +10,7 @@ class _DateTimeState extends State<DateTime> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("日历"),
+        title: Text("时钟"),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton(
@@ -29,5 +29,4 @@ class _DateTimeState extends State<DateTime> {
       ),
     );
   }
-
 }
